@@ -12,7 +12,7 @@ elif option == 2:
   joined_url = "https://lostshadowgd.github.io/py-yt/endpoint/audio/?url=" + url
 else:
   print("Invalid option. Download cancelled.")
-  return
+  exit()
   
 print("Download will start soon...")
 time.sleep(1.5)
