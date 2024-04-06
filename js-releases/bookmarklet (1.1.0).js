@@ -1,17 +1,1 @@
-javascript:(function() {
-    var url = prompt("Please enter a URL:");
-    var option = parseInt(prompt("Choose an option (1: Video, 2: Audio):"));
-    
-    if (option === 1) {
-        var joined_url = "https://lostshadowgd.github.io/py-yt/endpoint/?url=" + url;
-    } else if (option === 2) {
-        var joined_url = "https://lostshadowgd.github.io/py-yt/endpoint/audio/?url=" + url;
-    } else {
-        alert("Invalid option. Download Cancelled.");
-        return;
-    }
-    
-    setTimeout(function() {
-        window.open(joined_url, '_blank');
-    }, 1500);
-})();
+javascript:(function(){var url=prompt("Please enter a URL:");if(!url)return;var option=parseInt(prompt("Choose an option (1 or 2):"));if(option===1){var joined_url="https://option1."+url;}else if(option===2){var joined_url="https://option2."+url;}else{alert("Invalid option. Exiting.");return;}setTimeout(function(){window.open(joined_url,'_blank');},1500);})();
